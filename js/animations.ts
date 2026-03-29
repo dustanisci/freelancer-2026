@@ -25,8 +25,8 @@ export function animateHero(): void {
     .add({ targets: '#hero-ctas', opacity: [0, 1], translateY: [20, 0], duration: 600 }, '-=300')
     .add({ targets: '#heroRobot', opacity: [0, 1], scale: [0.85, 1], duration: 800, easing: 'easeOutBack' }, '-=500')
 
-  anime({ targets: '.gear-deco', opacity: [0, 0.25], duration: 1200, easing: 'easeOutCubic', delay: 600 })
-  anime({ targets: '.lightning-hero', opacity: [0, 0.18], translateX: [-30, 0], duration: 900, easing: 'easeOutCubic', delay: 800 })
+  anime({ targets: '.gear-deco', opacity: [0, 1], duration: 1200, easing: 'easeOutCubic', delay: 600 })
+  anime({ targets: '.lightning-hero', opacity: [0, 0.10], translateX: [-30, 0], duration: 900, easing: 'easeOutCubic', delay: 800 })
 }
 
 export function animateHeroRobotFloat(): void {
@@ -69,5 +69,5 @@ export function animateFAB(): void {
 }
 
 export function animateServicesRobot(): void {
-  anime({ targets: '.robot-services-left', opacity: [0, 0.22], translateX: [-20, 0], duration: 1000, easing: 'easeOutExpo', delay: 500 })
+  anime({ targets: '.robot-services-left', opacity: [0, 1], translateX: [-20, 0], duration: 1000, easing: 'easeOutExpo', delay: 500 })
 }

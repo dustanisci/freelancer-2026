@@ -1,0 +1,118 @@
+/* ============================================================
+   STATS / DIFERENCIAIS
+   ============================================================ */
+.stats-section {
+  background: var(--bg-section);
+  position: relative;
+  overflow: hidden;
+}
+
+.lightning-stats {
+  width: clamp(80px, 11vw, 145px);
+  top: 5%;
+  left: 2%;
+  opacity: 0.10;
+}
+
+.robot-stats-right {
+  width: clamp(120px, 16vw, 210px);
+  bottom: 0;
+  right: 0;
+}
+
+/* Stat cards */
+.stat-card {
+  background: var(--bg-card);
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--radius-card);
+  padding: 2rem 1.5rem;
+  position: relative;
+  overflow: hidden;
+  transition: transform var(--transition), box-shadow var(--transition);
+  box-shadow: 0 1px 8px rgba(0,0,0,0.05);
+}
+
+.stat-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 32px rgba(0,0,0,0.10), var(--shadow-glow-p);
+}
+
+.stat-icon {
+  font-size: 1.6rem;
+  background: linear-gradient(135deg, var(--purple-light), var(--cyan));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  margin-bottom: .75rem;
+}
+
+.stat-number {
+  font-family: var(--font-head);
+  font-size: clamp(2.5rem, 5vw, 3.5rem);
+  font-weight: 900;
+  background: linear-gradient(135deg, var(--purple-light), var(--cyan));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  line-height: 1;
+  display: inline-block;
+}
+
+.stat-plus, .stat-suffix {
+  font-family: var(--font-head);
+  font-size: 1.5rem;
+  font-weight: 900;
+  color: var(--cyan);
+  display: inline-block;
+  margin-left: .1em;
+}
+
+.stat-label {
+  font-size: .82rem;
+  color: var(--text-muted);
+  margin-top: .5rem;
+  font-weight: 500;
+  letter-spacing: .03em;
+}
+
+/* Differential cards */
+.diff-card {
+  background: var(--bg-card);
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--radius-card);
+  padding: 1.8rem 1.5rem;
+  text-align: center;
+  transition: transform var(--transition), border-color var(--transition), box-shadow var(--transition);
+  box-shadow: 0 1px 8px rgba(0,0,0,0.05);
+}
+
+.diff-card:hover {
+  transform: translateY(-4px);
+  border-color: rgba(29,78,216,.25);
+  box-shadow: 0 8px 32px rgba(0,0,0,0.08), var(--shadow-glow-p);
+}
+
+.diff-icon {
+  font-size: 1.8rem;
+  background: linear-gradient(135deg, var(--purple-light), var(--cyan));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  margin-bottom: 1rem;
+}
+
+.diff-title {
+  font-family: var(--font-head);
+  font-size: .85rem;
+  font-weight: 700;
+  color: var(--text-main);
+  margin-bottom: .5rem;
+  letter-spacing: .04em;
+}
+
+.diff-desc {
+  font-size: .82rem;
+  color: var(--text-muted);
+  line-height: 1.6;
+  margin: 0;
+}

@@ -1,0 +1,199 @@
+/* ============================================================
+   HERO
+   ============================================================ */
+.hero-section {
+  position: relative;
+  min-height: 100vh;
+  background: var(--bg-dark);
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+}
+
+/* Grid background pattern */
+.hero-bg-grid {
+  position: absolute;
+  inset: 0;
+  background-image:
+    linear-gradient(rgba(0,0,0,0.04) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(0,0,0,0.04) 1px, transparent 1px);
+  background-size: 50px 50px;
+  opacity: 1;
+  z-index: 0;
+}
+
+/* Radial gradient overlay */
+.hero-section::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background:
+    radial-gradient(ellipse 60% 60% at 20% 50%, rgba(29,78,216,.05) 0%, transparent 70%),
+    radial-gradient(ellipse 40% 50% at 80% 30%, rgba(2,132,199,.04) 0%, transparent 70%);
+  z-index: 1;
+}
+
+.hero-section::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: none;
+  pointer-events: none;
+  z-index: 1;
+}
+
+.hero-container { position: relative; z-index: 2; }
+
+/* Gear decorations */
+.gear-hero-right {
+  width: clamp(90px, 14vw, 180px);
+  top: 8%;
+  right: 2%;
+  animation: gearSpin 20s linear infinite;
+}
+
+.lightning-hero {
+  width: clamp(70px, 9vw, 120px);
+  bottom: 10%;
+  left: 2%;
+  opacity: 0.10;
+}
+
+@keyframes gearSpin {
+  from { transform: rotate(0deg); }
+  to   { transform: rotate(360deg); }
+}
+
+/* Text column */
+.hero-text-col { padding-top: var(--navbar-h); }
+
+.hero-pretitle {
+  display: inline-flex;
+  align-items: center;
+  gap: .5rem;
+  font-size: .8rem;
+  font-weight: 600;
+  letter-spacing: .14em;
+  text-transform: uppercase;
+  color: var(--purple);
+  margin-bottom: 1.2rem;
+}
+
+.pretitle-dot {
+  width: 8px; height: 8px;
+  background: var(--purple);
+  border-radius: 50%;
+  box-shadow: 0 0 8px rgba(29,78,216,0.4);
+  animation: pulse 2s ease-in-out infinite;
+}
+
+@keyframes pulse {
+  0%, 100% { box-shadow: 0 0 8px rgba(29,78,216,0.4); transform: scale(1); }
+  50%       { box-shadow: 0 0 16px rgba(29,78,216,0.55); transform: scale(1.2); }
+}
+
+.hero-title {
+  font-family: var(--font-head);
+  font-weight: 900;
+  font-size: clamp(2.4rem, 5.5vw, 4.2rem);
+  line-height: 1.08;
+  letter-spacing: -.01em;
+  margin-bottom: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: .1em;
+}
+
+.title-line {
+  display: block;
+  color: var(--text-main);
+}
+
+.title-accent {
+  background: linear-gradient(90deg, var(--purple-light), var(--cyan));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.hero-subtitle {
+  font-size: clamp(1rem, 2vw, 1.15rem);
+  color: var(--text-muted);
+  margin-bottom: 2.5rem;
+  max-width: 520px;
+}
+
+.hero-ctas {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+/* Robot column */
+.hero-robot-col {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: var(--navbar-h);
+}
+
+.hero-robot-wrapper {
+  position: relative;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Large soft bubble behind the robot */
+.robot-glow-ring {
+  position: absolute;
+  width: clamp(280px, 40vw, 500px);
+  height: clamp(280px, 40vw, 500px);
+  border-radius: 50%;
+  background: radial-gradient(circle, rgba(29,78,216,0.07) 0%, rgba(2,132,199,0.05) 50%, transparent 75%);
+  border: 1.5px solid rgba(29,78,216,0.09);
+  animation: ringPulse 4s ease-in-out infinite;
+}
+
+@keyframes ringPulse {
+  0%, 100% { transform: scale(1); opacity: .8; }
+  50%       { transform: scale(1.06); opacity: 1; }
+}
+
+.hero-robot-img {
+  width: clamp(260px, 36vw, 460px);
+  filter: drop-shadow(0 12px 32px rgba(0,0,0,0.12));
+}
+
+/* Scroll indicator */
+.scroll-indicator {
+  position: absolute;
+  bottom: 2rem;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: .4rem;
+  z-index: 2;
+  animation: scrollBob 2s ease-in-out infinite;
+}
+
+.scroll-line {
+  width: 1px;
+  height: 40px;
+  background: linear-gradient(to bottom, var(--purple), transparent);
+  display: block;
+}
+
+.scroll-text {
+  font-size: .65rem;
+  letter-spacing: .15em;
+  text-transform: uppercase;
+  color: var(--text-dim);
+}
+
+@keyframes scrollBob {
+  0%, 100% { transform: translateX(-50%) translateY(0); }
+  50%       { transform: translateX(-50%) translateY(6px); }
+}

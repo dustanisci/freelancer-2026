@@ -1,0 +1,45 @@
+/* ============================================================
+   BUTTONS (shared)
+   ============================================================ */
+.btn-primary-custom {
+  background: linear-gradient(135deg, var(--purple), var(--purple-light));
+  color: #fff;
+  border: none;
+  padding: .75rem 1.8rem;
+  border-radius: var(--radius-btn);
+  font-weight: 600;
+  font-size: .95rem;
+  display: inline-flex;
+  align-items: center;
+  gap: .5rem;
+  transition: transform var(--transition), box-shadow var(--transition);
+  text-decoration: none;
+  white-space: nowrap;
+}
+.btn-primary-custom:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 28px rgba(29,78,216,0.25);
+  color: #fff;
+}
+
+.btn-outline-custom {
+  background: transparent;
+  color: var(--purple);
+  border: 1.5px solid var(--purple);
+  padding: .75rem 1.8rem;
+  border-radius: var(--radius-btn);
+  font-weight: 600;
+  font-size: .95rem;
+  display: inline-flex;
+  align-items: center;
+  gap: .5rem;
+  transition: background var(--transition), transform var(--transition), box-shadow var(--transition);
+  text-decoration: none;
+  white-space: nowrap;
+}
+.btn-outline-custom:hover {
+  background: rgba(29,78,216,0.07);
+  transform: translateY(-3px);
+  box-shadow: var(--shadow-glow-p);
+  color: var(--purple);
+}

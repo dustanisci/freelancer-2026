@@ -1,0 +1,33 @@
+/* ── CSS Variables ─────────────────────────────────────── */
+:root {
+  --bg-dark:        #FFFFFF;
+  --bg-section:     #F7F9FC;
+  --bg-card:        #FFFFFF;
+  --bg-card-hover:  #F0F5FF;
+  --metal-light:    #374151;
+  --metal-mid:      #6B7280;
+  --metal-dark:     #9CA3AF;
+  --purple:         #1D4ED8;
+  --purple-light:   #3B82F6;
+  --purple-glow:    rgba(29,78,216,0.12);
+  --cyan:           #0284C7;
+  --cyan-glow:      rgba(2,132,199,0.12);
+  --cyan-dark:      #0369A1;
+  --yellow:         #F59E0B;
+  --yellow-glow:    rgba(245,158,11,0.18);
+  --red-accent:     #EF4444;
+  --text-main:      #111827;
+  --text-muted:     #6B7280;
+  --text-dim:       #9CA3AF;
+  --border-subtle:  rgba(0,0,0,0.09);
+  --border-glow:    rgba(2,132,199,0.3);
+  --radius-card:    16px;
+  --radius-btn:     10px;
+  --shadow-card:    0 2px 16px rgba(0,0,0,0.07);
+  --shadow-glow-p:  0 4px 24px rgba(29,78,216,0.12);
+  --shadow-glow-c:  0 4px 24px rgba(2,132,199,0.12);
+  --transition:     0.3s cubic-bezier(0.4,0,0.2,1);
+  --font-head:      'Orbitron', 'Segoe UI', sans-serif;
+  --font-body:      'Inter', system-ui, sans-serif;
+  --navbar-h:       72px;
+}

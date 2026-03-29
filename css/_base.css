@@ -1,0 +1,67 @@
+/* ── Reset & Base ──────────────────────────────────────── */
+*, *::before, *::after { box-sizing: border-box; }
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: var(--navbar-h);
+  font-size: 16px;
+}
+
+body {
+  background-color: var(--bg-dark);
+  color: var(--text-main);
+  font-family: var(--font-body);
+  font-weight: 400;
+  line-height: 1.7;
+  overflow-x: hidden;
+  -webkit-font-smoothing: antialiased;
+}
+
+img { max-width: 100%; height: auto; }
+
+/* Reduced motion */
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after { animation-duration: 0.01ms !important; transition-duration: 0.01ms !important; }
+}
+
+/* ── Skip Link (Accessibility) ─────────────────────────── */
+.skip-link {
+  position: absolute;
+  top: -100%;
+  left: 1rem;
+  z-index: 9999;
+  background: var(--purple);
+  color: #fff;
+  padding: .5rem 1rem;
+  border-radius: 0 0 var(--radius-btn) var(--radius-btn);
+  font-weight: 600;
+  text-decoration: none;
+  transition: top .2s;
+  box-shadow: 0 4px 16px rgba(29,78,216,0.3);
+}
+.skip-link:focus { top: 0; }
+
+/* ── Focus visible ─────────────────────────────────────── */
+:focus-visible {
+  outline: 2px solid var(--cyan);
+  outline-offset: 3px;
+  border-radius: 4px;
+}
+
+/* ── Scrollbar ─────────────────────────────────────────── */
+::-webkit-scrollbar { width: 6px; }
+::-webkit-scrollbar-track { background: #F1F5F9; }
+::-webkit-scrollbar-thumb { background: var(--purple-light); border-radius: 3px; }
+
+/* ── Utility ───────────────────────────────────────────── */
+.text-cyan   { color: var(--cyan); }
+.text-purple { color: var(--purple); }
+.section-padding { padding: 100px 0; }
+
+/* ── Decorative Robot Images ───────────────────────────── */
+.robot-deco {
+  position: absolute;
+  pointer-events: none;
+  user-select: none;
+  z-index: 0;
+}

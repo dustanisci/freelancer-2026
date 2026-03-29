@@ -1,0 +1,33 @@
+/* ============================================================
+   ANIMATION HELPER CLASSES (set by JS)
+   ============================================================ */
+.js-anim .is-visible {
+  opacity: 1;
+  transform: none;
+}
+
+/* Counter wrapper alignment */
+.stat-card .d-inline {
+  display: inline-flex;
+  align-items: baseline;
+  justify-content: center;
+}
+
+/* ============================================================
+   PROGRESSIVE ENHANCEMENT
+   .js-anim is added by JS — hides elements before animation.
+   Without JS, everything shows normally.
+   ============================================================ */
+.js-anim .robot-deco         { opacity: 0; }
+.js-anim .hero-pretitle      { opacity: 0; }
+.js-anim .title-line         { opacity: 0; transform: translateY(30px); }
+.js-anim .hero-subtitle      { opacity: 0; }
+.js-anim .hero-ctas          { opacity: 0; }
+.js-anim .hero-robot-img     { opacity: 0; }
+.js-anim .service-card         { opacity: 0; transform: translateY(30px); }
+.js-anim .service-card.anim-done { opacity: 1; transform: translateY(0); }
+.js-anim .service-card.anim-done:hover { transform: translateY(-6px); }
+.js-anim .stat-card          { opacity: 0; transform: translateY(30px); }
+.js-anim .diff-card          { opacity: 0; transform: translateY(30px); }
+.js-anim .contact-form       { opacity: 0; transform: translateY(30px); }
+.js-anim .whatsapp-fab       { opacity: 0; }

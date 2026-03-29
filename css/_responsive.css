@@ -1,0 +1,34 @@
+/* ============================================================
+   RESPONSIVE OVERRIDES
+   ============================================================ */
+@media (max-width: 767.98px) {
+  .hero-title { font-size: clamp(2rem, 8vw, 2.6rem); }
+  .hero-robot-col { display: none; }
+  .gear-hero-right { width: 80px; }
+  .lightning-hero { width: 60px; opacity: .10; }
+  .section-padding { padding: 70px 0; }
+  .robot-about-right { width: 90px; }
+  .robot-about-left { width: 70px; }
+  .robot-stats-right { width: 90px; }
+  .robot-contact-left { width: 90px; }
+  .robot-services-left { width: 110px; }
+  .gear-services-tl { width: 65px; opacity: 1; }
+}
+/* Landscape mobile — impede o robô de sobrepor os botões */
+@media (max-height: 500px) and (orientation: landscape) {
+  .hero-robot-col { display: none; }
+  .hero-section { min-height: auto; padding: calc(var(--navbar-h) + 1.5rem) 0 2rem; }
+  .hero-text-col { padding-top: 0; }
+  .hero-robot-col { padding-top: 0; }
+  .scroll-indicator { display: none; }
+}
+@media (max-width: 575.98px) {
+  .hero-ctas { flex-direction: column; }
+  .btn-primary-custom,
+  .btn-outline-custom { justify-content: center; }
+  .about-tags { gap: .4rem; }
+}
+
+@media (min-width: 1400px) {
+  .hero-robot-img { width: 460px; }
+}
