@@ -130,6 +130,82 @@
         rgba(8, 13, 24, 0.80) 55%,
         rgba(8, 13, 24, 0.6) 100%);
   }
+
+  /* Serviços — forçar dark (responsive.css hardcoda branco) */
+  .services-section {
+    background: #0F172A !important;
+  }
+
+  .services-section .section-badge {
+    color: #60A5FA !important;
+    border-color: rgba(96,165,250,.25) !important;
+    background: rgba(96,165,250,.08) !important;
+  }
+
+  .services-section .section-title {
+    color: #F1F5F9 !important;
+  }
+
+  .services-section .section-subtitle {
+    color: #94A3B8 !important;
+  }
+
+  .service-card {
+    background: #1E293B !important;
+    border-color: rgba(255,255,255,.07) !important;
+    box-shadow: 0 2px 12px rgba(0,0,0,.4) !important;
+  }
+
+  .service-card:hover {
+    border-color: rgba(96,165,250,.4) !important;
+    box-shadow: 0 8px 32px rgba(0,0,0,.5) !important;
+  }
+
+  .service-title {
+    color: #F1F5F9 !important;
+  }
+
+  .service-desc {
+    color: #94A3B8 !important;
+  }
+
+  .service-icon-wrap {
+    background: rgba(96,165,250,.12) !important;
+    border-color: rgba(96,165,250,.2) !important;
+  }
+
+  /* Offcanvas (menu hamburguer) — dark */
+  .navbar-offcanvas.offcanvas {
+    background: #0D1526 !important;
+    border-left-color: rgba(255,255,255,0.07) !important;
+  }
+
+  .navbar-offcanvas .offcanvas-header {
+    border-bottom-color: rgba(255,255,255,0.07) !important;
+  }
+
+  .navbar-toggler-icon {
+    filter: invert(1);
+  }
+
+  .offcanvas-nav-link {
+    color: #94A3B8 !important;
+    border-bottom-color: rgba(255,255,255,0.06) !important;
+  }
+
+  .offcanvas-nav-link:hover,
+  .offcanvas-nav-link.active {
+    color: #7FA8FF !important;
+    background: rgba(79,131,255,0.1) !important;
+  }
+
+  .sidebar-footer-text {
+    color: #64748B !important;
+  }
+
+  .navbar-offcanvas .offcanvas-title {
+    color: #F1F5F9 !important;
+  }
 }
 
 /* ── 7. Stats cards ────────────────────────────────────── */
