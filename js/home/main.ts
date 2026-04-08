@@ -1,10 +1,10 @@
 /**
- * main.ts — Entry point ESM (Vite)
+ * home/main.ts — Entry point da página Home
  * Orquestra todos os módulos
  */
 
-import { populateExpYears } from './utils'
-import { initNavbar } from './navbar'
+import { populateExpYears } from '../shared/utils'
+import { initNavbar } from '../shared/navbar'
 import {
   animateNavbar,
   animateHero,
@@ -12,9 +12,9 @@ import {
   animateDecorativeRobots,
   animateFAB,
   animateServicesRobot,
-} from './animations'
+} from '../shared/animations'
 import { initScrollAnimations } from './scroll-animations'
-import { initContactForm, initCardTilt, initCardClick } from './form.ts'
+import { initContactForm, initCardTilt, initCardClick } from './form'
 
 document.addEventListener('DOMContentLoaded', () => {
   // Habilita animações CSS (progressive enhancement)

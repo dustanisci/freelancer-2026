@@ -1,0 +1,257 @@
+/* ============================================================
+   RESPONSIVE OVERRIDES
+   ============================================================ */
+
+/* Mobile — vídeo como fundo completo */
+@media (max-width: 991.98px) {
+  .hero-video-wrap {
+    width: 100%;
+  }
+
+  .hero-video-overlay {
+    background: rgba(5, 8, 18, 0.6);
+  }
+
+  /* Legibilidade do texto sobre o vídeo */
+  .hero-text-col {
+    position: relative;
+    z-index: 2;
+  }
+
+  .hero-pretitle {
+    color: rgba(255, 255, 255, 0.95) !important;
+    text-shadow: 0 1px 8px rgba(0, 0, 0, 0.8);
+  }
+
+  .pretitle-dot {
+    background: #fff;
+    box-shadow: 0 0 8px rgba(255, 255, 255, 0.5);
+  }
+
+  .title-line {
+    color: #ffffff !important;
+    -webkit-text-fill-color: #ffffff !important;
+    text-shadow: 0 2px 14px rgba(0, 0, 0, 0.9);
+  }
+
+  .title-accent {
+    background: linear-gradient(90deg, #93c5fd, #38bdf8);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent !important;
+    background-clip: text;
+    text-shadow: none;
+    filter: drop-shadow(0 2px 8px rgba(0, 0, 0, 0.7));
+  }
+
+  .hero-subtitle {
+    color: rgba(255, 255, 255, 0.88) !important;
+    text-shadow: 0 1px 8px rgba(0, 0, 0, 0.8);
+  }
+
+  .hero-subtitle strong {
+    color: #ffffff;
+  }
+
+  .btn-outline-custom {
+    color: #ffffff !important;
+    border-color: rgba(255, 255, 255, 0.75) !important;
+  }
+  .btn-outline-custom:hover {
+    background: rgba(255, 255, 255, 0.12) !important;
+    color: #ffffff !important;
+  }
+}
+
+/* Mobile — vídeo do sobre como fundo */
+@media (max-width: 991.98px) {
+  .about-video-wrap {
+    width: 100%;
+    height: 100%;
+    top: 0;
+    bottom: auto;
+    z-index: 1;
+  }
+
+  .about-video-overlay {
+    background: linear-gradient(
+      to bottom,
+      rgba(5, 8, 18, 0.88) 0%,
+      rgba(5, 8, 18, 0.88) 50%,
+      rgba(5, 8, 18, 0.12) 100%
+    );
+  }
+
+  .about-section {
+    display: block;
+    padding-bottom: 16rem;
+  }
+
+  .about-section .container {
+    position: relative;
+    z-index: 3;
+    padding-bottom: 0;
+  }
+
+  .about-section .col-lg-6 {
+    position: relative;
+    z-index: 3;
+    padding-top: 0;
+  }
+
+  .about-section .section-title {
+    color: #ffffff !important;
+    text-shadow: 0 2px 14px rgba(0, 0, 0, 0.9);
+  }
+
+  .about-section .about-text {
+    color: rgba(255, 255, 255, 0.88) !important;
+    text-shadow: 0 1px 10px rgba(0, 0, 0, 0.8);
+  }
+
+  .about-section .about-text strong {
+    color: #ffffff !important;
+  }
+
+  .about-section .about-tag {
+    color: rgba(255, 255, 255, 0.85) !important;
+    text-shadow: 0 1px 6px rgba(0, 0, 0, 0.7);
+    background: rgba(255, 255, 255, 0.08) !important;
+    border-color: rgba(255, 255, 255, 0.15) !important;
+  }
+
+  .about-section .section-badge {
+    color: rgba(255, 255, 255, 0.9) !important;
+    background: rgba(255, 255, 255, 0.1) !important;
+    border-color: rgba(255, 255, 255, 0.2) !important;
+  }
+
+  .about-section .text-cyan {
+    color: #38bdf8 !important;
+    -webkit-text-fill-color: #38bdf8 !important;
+    text-shadow: 0 2px 12px rgba(0, 0, 0, 0.8);
+  }
+
+  .about-section .about-tag i {
+    color: #38bdf8 !important;
+  }
+}
+
+@media (max-width: 767.98px) {
+  .hero-title { font-size: clamp(2rem, 8vw, 2.6rem); }
+  .hero-robot-col { display: none; }
+  .gear-hero-right { width: 80px; }
+  .lightning-hero { width: 60px; opacity: .10; }
+  .section-padding { padding: 70px 0; }
+  .robot-about-right { width: 90px; }
+  .robot-about-left { width: 70px; }
+  .robot-stats-right { width: 90px; }
+  .robot-contact-left { width: 90px; }
+  .robot-services-left { width: 110px; }
+  .gear-services-tl { width: 65px; opacity: 1; }
+
+  /* Serviços — visual clean branco no mobile */
+  .services-section {
+    background: #f8faff;
+  }
+
+  .services-section .section-badge {
+    color: var(--purple);
+    border-color: rgba(29,78,216,.2);
+    background: rgba(29,78,216,.06);
+  }
+
+  .services-section .section-title {
+    color: var(--text-main);
+  }
+
+  .services-section .section-subtitle {
+    color: var(--text-muted);
+  }
+
+  .service-card {
+    background: #ffffff;
+    border-color: rgba(0,0,0,.08);
+    box-shadow: 0 2px 12px rgba(0,0,0,.07);
+  }
+
+  .service-card:hover {
+    border-color: rgba(29,78,216,.3);
+    box-shadow: 0 8px 28px rgba(29,78,216,.1);
+  }
+
+  .service-title {
+    color: var(--text-main);
+  }
+
+  .service-desc {
+    color: var(--text-muted);
+  }
+
+  .service-icon-wrap {
+    background: rgba(29,78,216,.08);
+    border-color: rgba(29,78,216,.15);
+  }
+}
+/* Landscape mobile — impede o robô de sobrepor os botões */
+@media (max-height: 500px) and (orientation: landscape) {
+  .hero-robot-col { display: none; }
+  .hero-section { min-height: auto; padding: calc(var(--navbar-h) + 1.5rem) 0 2rem; }
+  .hero-text-col { padding-top: 0; }
+  .hero-robot-col { padding-top: 0; }
+  .scroll-indicator { display: none; }
+}
+
+/* Landscape mobile/tablet — serviços clean branco */
+@media (orientation: landscape) and (max-width: 1024px) {
+  .services-section {
+    background: #f8faff;
+  }
+
+  .services-section .section-badge {
+    color: var(--purple);
+    border-color: rgba(29,78,216,.2);
+    background: rgba(29,78,216,.06);
+  }
+
+  .services-section .section-title {
+    color: var(--text-main);
+  }
+
+  .services-section .section-subtitle {
+    color: var(--text-muted);
+  }
+
+  .service-card {
+    background: #ffffff;
+    border-color: rgba(0,0,0,.08);
+    box-shadow: 0 2px 12px rgba(0,0,0,.07);
+  }
+
+  .service-card:hover {
+    border-color: rgba(29,78,216,.3);
+    box-shadow: 0 8px 28px rgba(29,78,216,.1);
+  }
+
+  .service-title {
+    color: var(--text-main);
+  }
+
+  .service-desc {
+    color: var(--text-muted);
+  }
+
+  .service-icon-wrap {
+    background: rgba(29,78,216,.08);
+    border-color: rgba(29,78,216,.15);
+  }
+}
+@media (max-width: 575.98px) {
+  .hero-ctas { flex-direction: column; }
+  .btn-primary-custom,
+  .btn-outline-custom { justify-content: center; }
+  .about-tags { gap: .4rem; }
+}
+
+@media (min-width: 1400px) {
+  .hero-robot-img { width: 460px; }
+}

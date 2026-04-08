@@ -1,5 +1,5 @@
 import { describe, it, expect, vi, beforeEach } from 'vitest'
-import { animateCounter } from '../counter'
+import { animateCounter } from '../../shared/counter'
 
 // Immediately apply final value and invoke update() so the DOM is updated synchronously
 vi.mock('animejs', () => ({

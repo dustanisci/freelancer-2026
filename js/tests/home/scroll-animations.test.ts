@@ -1,13 +1,13 @@
 import { describe, it, expect, vi, beforeEach } from 'vitest'
-import { initScrollAnimations } from '../scroll-animations'
+import { initScrollAnimations } from '../../home/scroll-animations'
 
 vi.mock('animejs', () => {
   const fn = vi.fn()
   ;(fn as ReturnType<typeof vi.fn> & { stagger: ReturnType<typeof vi.fn> }).stagger = vi.fn(() => 0)
   return { default: fn }
 })
-vi.mock('../counter', () => ({ animateCounter: vi.fn() }))
-vi.mock('../utils', () => ({ calcExpYears: vi.fn(() => 14) }))
+vi.mock('../../shared/counter', () => ({ animateCounter: vi.fn() }))
+vi.mock('../../shared/utils', () => ({ calcExpYears: vi.fn(() => 14) }))
 
 // ─── IntersectionObserver mock ────────────────────────────────────────────────
 

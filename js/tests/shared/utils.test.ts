@@ -1,5 +1,5 @@
 import { describe, it, expect, beforeEach } from 'vitest'
-import { calcExpYears, FORMATION_YEAR, populateExpYears } from '../utils'
+import { calcExpYears, FORMATION_YEAR, populateExpYears } from '../../shared/utils'
 
 describe('FORMATION_YEAR', () => {
   it('is 2011', () => {

@@ -1,5 +1,5 @@
 import { describe, it, expect, vi, beforeEach, afterEach } from 'vitest'
-import { initNavbar } from '../navbar'
+import { initNavbar } from '../../shared/navbar'
 
 vi.mock('bootstrap', () => ({
   Offcanvas: {

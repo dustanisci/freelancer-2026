@@ -7,20 +7,6 @@
   overflow: hidden;
 }
 
-.robot-about-right {
-  width: clamp(120px, 16vw, 220px);
-  bottom: 0;
-  right: -1%;
-  opacity: .10;
-}
-
-.robot-about-left {
-  width: clamp(90px, 12vw, 170px);
-  top: 5%;
-  left: 0;
-  opacity: 0.10;
-}
-
 /* Avatar */
 .about-avatar-wrapper {
   position: relative;

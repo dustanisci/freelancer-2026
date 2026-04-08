@@ -1,5 +1,5 @@
 import { describe, it, expect, vi, beforeEach, afterEach } from 'vitest'
-import { initContactForm, initCardClick, initCardTilt } from '../form'
+import { initContactForm, initCardClick, initCardTilt } from '../../home/form'
 
 // ─── Helpers ────────────────────────────────────────────────────────────────
 
