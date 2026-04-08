@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://eduardoti.com.br/sitemap.xml
+Sitemap: https://dutecnologia.com.br/sitemap.xml
