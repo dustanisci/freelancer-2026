@@ -93,13 +93,18 @@
 }
 
 /* ── 6b. Hero — overlay fade (espelho do about) ─────────── */
+/* Extende o wrap para além dos 50% para o blend sangrar por baixo do texto */
+.hero-video-wrap {
+  width: 58%;
+}
+
 .hero-video-overlay {
   background:
     linear-gradient(to left,
       transparent 0%,
-      rgba(8,13,24,0.60) 65%,
-      rgba(8,13,24,0.88) 78%,
-      rgba(8,13,24,0.95) 88%
+      rgba(8,13,24,0.55) 55%,
+      rgba(8,13,24,0.88) 73%,
+      #080D18 86%
     );
 }
 
