@@ -1,10 +1,10 @@
-/* ============================================================
-   Aula Particular — Dark Theme Overrides
+﻿/* ============================================================
+   Aula Particular â€” Dark Theme Overrides
    Remaps all shared CSS variables to a dark navy/slate palette
    and fixes element-level hardcoded colours.
    ============================================================ */
 
-/* ── 1. Variable remapping ─────────────────────────────── */
+/* â”€â”€ 1. Variable remapping â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */
 :root {
   /* Backgrounds */
   --bg-dark: #080D18;
@@ -17,7 +17,7 @@
   --metal-mid: #94A3B8;
   --metal-dark: #64748B;
 
-  /* Brand accents — brightened for dark surfaces */
+  /* Brand accents â€” brightened for dark surfaces */
   --purple: #4F83FF;
   --purple-light: #7FA8FF;
   --purple-glow: rgba(79, 131, 255, 0.18);
@@ -38,7 +38,7 @@
   --shadow-glow-c: 0 4px 24px rgba(56, 189, 248, 0.18);
 }
 
-/* ── 2. Scrollbar — dark track ─────────────────────────── */
+/* â”€â”€ 2. Scrollbar â€” dark track â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */
 ::-webkit-scrollbar-track {
   background: #0D1526;
 }
@@ -47,7 +47,7 @@
   background: var(--purple);
 }
 
-/* ── 3. Navbar — dark glass ────────────────────────────── */
+/* â”€â”€ 3. Navbar â€” dark glass â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */
 #mainNav {
   background: rgba(8, 13, 24, 0.88);
   border-bottom-color: rgba(255, 255, 255, 0.07);
@@ -69,7 +69,7 @@
   background: rgba(79, 131, 255, 0.1);
 }
 
-/* ── 4. Hero — invert grid & brighten overlays ─────────── */
+/* â”€â”€ 4. Hero â€” invert grid & brighten overlays â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */
 .hero-bg-grid {
   background-image:
     linear-gradient(rgba(255, 255, 255, 0.04) 1px, transparent 1px),
@@ -82,14 +82,14 @@
     radial-gradient(ellipse 40% 50% at 80% 30%, rgba(56, 189, 248, .13) 0%, transparent 70%);
 }
 
-/* ── 5. Section-common badges ──────────────────────────── */
+/* â”€â”€ 5. Section-common badges â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */
 .section-badge {
   color: var(--purple-light);
   border-color: rgba(79, 131, 255, 0.25);
   background: rgba(79, 131, 255, 0.1);
 }
 
-/* ── 6. About — overlay on dark bg ────────────────────── */
+/* â”€â”€ 6. About â€” overlay on dark bg â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */
 .about-video-overlay {
   background:
     linear-gradient(to right,
@@ -99,8 +99,8 @@
       #080D18 100%);
 }
 
-/* ── 6b. Hero — overlay fade (espelho do about) ─────────── */
-/* Vídeo ocupa full-width, gradiente controla a visibilidade */
+/* â”€â”€ 6b. Hero â€” overlay fade (espelho do about) â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */
+/* VÃ­deo ocupa full-width, gradiente controla a visibilidade */
 .hero-video-wrap {
   width: 100%;
 }
@@ -115,15 +115,15 @@
       transparent 100%);
 }
 
-/* ── Mobile overrides ──────────────────────────────────── */
+/* â”€â”€ Mobile overrides â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */
 @media (max-width: 991.98px) {
 
-  /* Hero: vídeo vira fundo completo — overlay leve, sem gradiente lateral */
+  /* Hero: vÃ­deo vira fundo completo â€” overlay leve, sem gradiente lateral */
   .hero-video-overlay {
     background: rgba(8, 13, 24, 0.6);
   }
 
-  /* About: overlay topo→base mais intenso para garantir leitura do texto */
+  /* About: overlay topoâ†’base mais intenso para garantir leitura do texto */
   .about-video-overlay {
     background: linear-gradient(to bottom,
         rgba(8, 13, 24, 0.92) 0%,
@@ -131,57 +131,57 @@
         rgba(8, 13, 24, 0.6) 100%);
   }
 
-  /* Serviços — forçar dark (responsive.css hardcoda branco) */
+  /* ServiÃ§os â€” forÃ§ar dark (responsive.css hardcoda branco) */
   .services-section {
-    background: #0F172A !important;
+    background: #0F172A;
   }
 
   .services-section .section-badge {
-    color: #60A5FA !important;
-    border-color: rgba(96,165,250,.25) !important;
-    background: rgba(96,165,250,.08) !important;
+    color: #60A5FA;
+    border-color: rgba(96,165,250,.25);
+    background: rgba(96,165,250,.08);
   }
 
   .services-section .section-title {
-    color: #F1F5F9 !important;
+    color: #F1F5F9;
   }
 
   .services-section .section-subtitle {
-    color: #94A3B8 !important;
+    color: #94A3B8;
   }
 
   .service-card {
-    background: #1E293B !important;
-    border-color: rgba(255,255,255,.07) !important;
-    box-shadow: 0 2px 12px rgba(0,0,0,.4) !important;
+    background: #1E293B;
+    border-color: rgba(255,255,255,.07);
+    box-shadow: 0 2px 12px rgba(0,0,0,.4);
   }
 
   .service-card:hover {
-    border-color: rgba(96,165,250,.4) !important;
-    box-shadow: 0 8px 32px rgba(0,0,0,.5) !important;
+    border-color: rgba(96,165,250,.4);
+    box-shadow: 0 8px 32px rgba(0,0,0,.5);
   }
 
   .service-title {
-    color: #F1F5F9 !important;
+    color: #F1F5F9;
   }
 
   .service-desc {
-    color: #94A3B8 !important;
+    color: #94A3B8;
   }
 
   .service-icon-wrap {
-    background: rgba(96,165,250,.12) !important;
-    border-color: rgba(96,165,250,.2) !important;
+    background: rgba(96,165,250,.12);
+    border-color: rgba(96,165,250,.2);
   }
 
-  /* Offcanvas (menu hamburguer) — dark */
+  /* Offcanvas (menu hamburguer) â€” dark */
   .navbar-offcanvas.offcanvas {
-    background: #0D1526 !important;
-    border-left-color: rgba(255,255,255,0.07) !important;
+    background: #0D1526;
+    border-left-color: rgba(255,255,255,0.07);
   }
 
   .navbar-offcanvas .offcanvas-header {
-    border-bottom-color: rgba(255,255,255,0.07) !important;
+    border-bottom-color: rgba(255,255,255,0.07);
   }
 
   .navbar-toggler-icon {
@@ -189,26 +189,26 @@
   }
 
   .offcanvas-nav-link {
-    color: #94A3B8 !important;
-    border-bottom-color: rgba(255,255,255,0.06) !important;
+    color: #94A3B8;
+    border-bottom-color: rgba(255,255,255,0.06);
   }
 
   .offcanvas-nav-link:hover,
   .offcanvas-nav-link.active {
-    color: #7FA8FF !important;
-    background: rgba(79,131,255,0.1) !important;
+    color: #7FA8FF;
+    background: rgba(79,131,255,0.1);
   }
 
   .sidebar-footer-text {
-    color: #64748B !important;
+    color: #64748B;
   }
 
   .navbar-offcanvas .offcanvas-title {
-    color: #F1F5F9 !important;
+    color: #F1F5F9;
   }
 }
 
-/* ── 7. Stats cards ────────────────────────────────────── */
+/* â”€â”€ 7. Stats cards â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */
 .stat-card:hover {
   box-shadow: 0 8px 32px rgba(0, 0, 0, 0.5), var(--shadow-glow-p);
 }
@@ -217,7 +217,7 @@
   box-shadow: 0 8px 32px rgba(0, 0, 0, 0.4), var(--shadow-glow-p);
 }
 
-/* ── 8. Contact section — restaura paleta clara ─────────── */
+/* â”€â”€ 8. Contact section â€” restaura paleta clara â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */
 .contact-section {
   --bg-dark: #FFFFFF;
   --bg-section: #F7F9FC;
@@ -280,12 +280,12 @@
   color: #6B7280;
 }
 
-/* ── 9. Footer ─────────────────────────────────────────── */
+/* â”€â”€ 9. Footer â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */
 .footer-brand {
   color: var(--text-main);
 }
 
-/* ── 10. FAB / floating button ─────────────────────────── */
+/* â”€â”€ 10. FAB / floating button â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */
 .fab-item .fab-label {
   background: var(--bg-card);
   border: 1px solid var(--border-subtle);
