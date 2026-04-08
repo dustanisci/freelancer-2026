@@ -5,6 +5,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
 
+  <!-- Favicon -->
+  <link rel="icon" type="image/x-icon" href="images/bots/favicon.ico" />
+  <link rel="shortcut icon" type="image/x-icon" href="images/bots/favicon.ico" />
+
   <!-- SEO Primary -->
   <title>Eduardo | Especialista em Serviços de TI em São Paulo — Sites, Apps, Segurança e Marketing Digital</title>
   <meta name="description" content="Eduardo, especialista em Serviços de TI com 14+ anos de experiência em Análise e Desenvolvimento de Sistemas. Criação de sites, apps, segurança digital, marketing, suporte técnico e muito mais em São Paulo." />
@@ -75,15 +79,14 @@
     },
     "serviceType": [
       "Criação de Sites e Aplicativos",
+      "E-mail Profissional",
       "Segurança Digital",
-      "Suporte em Computadores",
-      "Aulas de Tecnologia",
       "Marketing Digital",
       "Criação de Banners e Logomarca",
       "Reputação Online",
       "Integração de Sistemas",
       "Investigação",
-      "Cliente Oculto Digital"
+      "Analytics e Relatórios"
     ],
     "sameAs": []
   }
@@ -161,13 +164,19 @@
     <section id="hero" class="hero-section" aria-label="Apresentação">
       <!-- Background decorations -->
       <div class="hero-bg-grid" aria-hidden="true"></div>
-      <img src="images/bots/imagem1.png" alt="" class="robot-deco gear-deco gear-hero-right" aria-hidden="true" loading="lazy" />
-      <img src="images/bots/imagem3.png" alt="" class="robot-deco lightning-hero" aria-hidden="true" loading="lazy" />
+
+      <!-- Video — desktop: right half; mobile: full background -->
+      <div class="hero-video-wrap" aria-hidden="true">
+        <video class="hero-video" autoplay muted loop playsinline>
+          <source src="videos/predios.mov" type="video/mp4" />
+        </video>
+        <div class="hero-video-overlay"></div>
+      </div>
 
       <div class="container hero-container">
         <div class="row align-items-center min-vh-100">
           <!-- Text side -->
-          <div class="col-lg-7 hero-text-col">
+          <div class="col-lg-6 hero-text-col">
             <p class="hero-pretitle" id="hero-pretitle">
               <span class="pretitle-dot"></span> Especialista em TI em São Paulo
             </p>
@@ -190,13 +199,6 @@
             </div>
           </div>
 
-          <!-- Robot mascot side -->
-          <div class="col-lg-5 hero-robot-col" aria-hidden="true">
-            <div class="hero-robot-wrapper">
-              <div class="robot-glow-ring"></div>
-              <img src="images/bots/imagem2.png" alt="" class="hero-robot-img" id="heroRobot" loading="eager" />
-            </div>
-          </div>
         </div>
       </div>
 
@@ -232,7 +234,7 @@
                 <img src="images/bots/imagem10.png" alt="" class="service-robot" loading="lazy" aria-hidden="true" />
               </div>
               <h3 class="service-title">Sites, Apps e Sistemas</h3>
-              <p class="service-desc">Criação de páginas, manutenção, otimização SEO, landing pages de alta conversão, lojas virtuais, dashboards, migração WordPress, integração com WhatsApp e muito mais.</p>
+              <p class="service-desc">Criação de páginas, manutenção, otimização SEO, landing pages de alta conversão, lojas virtuais, dashboards, migração WordPress, integração com WhatsApp, configuração de domínio e hospedagem e muito mais.</p>
               <a href="https://wa.me/5511934967887?text=Olá%2C%20Eduardo!%20Como%20você%20está%3F%20Tenho%20interesse%20no%20serviço%20de%20Sites,%20Apps%20e%20Sistemas." target="_blank" rel="noopener noreferrer" class="service-cta" aria-label="Contratar serviço de Sites, Apps e Sistemas">
                 Solicitar <i class="fas fa-arrow-right" aria-hidden="true"></i>
               </a>
@@ -256,41 +258,24 @@
             </article>
           </div>
 
-          <!-- 3. Suporte em Computadores -->
+          <!-- 3. E-mail Profissional -->
           <div class="col-sm-6 col-xl-4 service-item">
-            <article class="service-card h-100" aria-label="Suporte em Computadores">
+            <article class="service-card h-100" aria-label="E-mail Profissional">
               <div class="service-icon-wrap">
-                <i class="fas fa-computer service-icon" aria-hidden="true"></i>
+                <i class="fas fa-at service-icon" aria-hidden="true"></i>
               </div>
               <div class="service-robot-img-wrap">
                 <img src="images/bots/imagem8.png" alt="" class="service-robot" loading="lazy" aria-hidden="true" />
               </div>
-              <h3 class="service-title">Suporte em Computadores</h3>
-              <p class="service-desc">Formatação do zero, instalação de programas gratuitos, configuração de impressoras e softwares, além de auxílio técnico em dificuldades pontuais.</p>
-              <a href="https://wa.me/5511934967887?text=Olá%2C%20Eduardo!%20Como%20você%20está%3F%20Tenho%20interesse%20no%20serviço%20de%20Suporte%20em%20Computadores." target="_blank" rel="noopener noreferrer" class="service-cta" aria-label="Contratar serviço de Suporte em Computadores">
+              <h3 class="service-title">E-mail Profissional</h3>
+              <p class="service-desc">Criação e configuração de e-mail personalizado com o endereço do seu site (ex: contato@seusite.com.br), transmitindo mais credibilidade e profissionalismo para o seu negócio.</p>
+              <a href="https://wa.me/5511934967887?text=Olá%2C%20Eduardo!%20Como%20você%20está%3F%20Tenho%20interesse%20no%20serviço%20de%20E-mail%20Profissional." target="_blank" rel="noopener noreferrer" class="service-cta" aria-label="Contratar serviço de E-mail Profissional">
                 Solicitar <i class="fas fa-arrow-right" aria-hidden="true"></i>
               </a>
             </article>
           </div>
 
-          <!-- 4. Aulas de Tecnologia -->
-          <div class="col-sm-6 col-xl-4 service-item">
-            <article class="service-card h-100" aria-label="Aulas de Tecnologia">
-              <div class="service-icon-wrap">
-                <i class="fas fa-chalkboard-user service-icon" aria-hidden="true"></i>
-              </div>
-              <div class="service-robot-img-wrap">
-                <img src="images/bots/imagem5.png" alt="" class="service-robot" loading="lazy" aria-hidden="true" />
-              </div>
-              <h3 class="service-title">Aulas de Tecnologia</h3>
-              <p class="service-desc">Aulas de uso de computadores e celulares, programação, redes sociais, internet e Inteligência Artificial, do básico ao avançado, no seu ritmo.</p>
-              <a href="https://wa.me/5511934967887?text=Olá%2C%20Eduardo!%20Como%20você%20está%3F%20Tenho%20interesse%20nas%20Aulas%20de%20Tecnologia." target="_blank" rel="noopener noreferrer" class="service-cta" aria-label="Contratar serviço de Aulas de Tecnologia">
-                Solicitar <i class="fas fa-arrow-right" aria-hidden="true"></i>
-              </a>
-            </article>
-          </div>
-
-          <!-- 5. Marketing Digital -->
+          <!-- 4. Marketing Digital -->
           <div class="col-sm-6 col-xl-4 service-item">
             <article class="service-card h-100" aria-label="Marketing Digital">
               <div class="service-icon-wrap">
@@ -300,7 +285,7 @@
                 <img src="images/bots/imagem7.png" alt="" class="service-robot" loading="lazy" aria-hidden="true" />
               </div>
               <h3 class="service-title">Marketing Digital</h3>
-              <p class="service-desc">Divulgação da sua marca, melhora de engajamento, SEO para tráfego orgânico no site e redes sociais, configuração de anúncios e funil de vendas.</p>
+              <p class="service-desc">Divulgação da sua marca, melhora de engajamento, SEO para tráfego orgânico no site (aparecer no Google) e redes sociais, configuração de anúncios e funil de vendas.</p>
               <a href="https://wa.me/5511934967887?text=Olá%2C%20Eduardo!%20Como%20você%20está%3F%20Tenho%20interesse%20no%20serviço%20de%20Marketing%20Digital." target="_blank" rel="noopener noreferrer" class="service-cta" aria-label="Contratar serviço de Marketing Digital">
                 Solicitar <i class="fas fa-arrow-right" aria-hidden="true"></i>
               </a>
@@ -341,23 +326,6 @@
             </article>
           </div>
 
-          <!-- 8. Formatação ABNT -->
-          <div class="col-sm-6 col-xl-4 service-item">
-            <article class="service-card h-100" aria-label="Formatação de Documentos ABNT">
-              <div class="service-icon-wrap">
-                <i class="fas fa-file-lines service-icon" aria-hidden="true"></i>
-              </div>
-              <div class="service-robot-img-wrap">
-                <img src="images/bots/imagem5.png" alt="" class="service-robot service-robot-sm" loading="lazy" aria-hidden="true" />
-              </div>
-              <h3 class="service-title">Formatação ABNT</h3>
-              <p class="service-desc">Formatação de trabalhos acadêmicos, TCCs, monografias e documentos conforme as normas ABNT, de forma rápida, precisa e sem dor de cabeça.</p>
-              <a href="https://wa.me/5511934967887?text=Olá%2C%20Eduardo!%20Como%20você%20está%3F%20Tenho%20interesse%20no%20serviço%20de%20Formatação%20ABNT." target="_blank" rel="noopener noreferrer" class="service-cta" aria-label="Contratar serviço de Formatação ABNT">
-                Solicitar <i class="fas fa-arrow-right" aria-hidden="true"></i>
-              </a>
-            </article>
-          </div>
-
           <!-- 9. Integrações entre Sistemas -->
           <div class="col-sm-6 col-xl-4 service-item">
             <article class="service-card h-100" aria-label="Integrações entre Sistemas">
@@ -385,31 +353,14 @@
                 <img src="images/bots/imagem9.png" alt="" class="service-robot service-robot-sm" loading="lazy" aria-hidden="true" />
               </div>
               <h3 class="service-title">Investigação OSINT</h3>
-              <p class="service-desc">Pesquisa de informações públicas na internet (OSINT) para verificar a confiabilidade de pessoas, empresas ou serviços. Identifica possíveis fraudes, golpes e riscos digitais.</p>
+              <p class="service-desc">Pesquisa de informações públicas na internet (OSINT) para verificar a confiabilidade de pessoas, empresas ou serviços. Identifico possíveis fraudes, golpes e riscos digitais.</p>
               <a href="https://wa.me/5511934967887?text=Olá%2C%20Eduardo!%20Como%20você%20está%3F%20Tenho%20interesse%20no%20serviço%20de%20Investigação%20OSINT." target="_blank" rel="noopener noreferrer" class="service-cta" aria-label="Contratar serviço de Investigação OSINT">
                 Solicitar <i class="fas fa-arrow-right" aria-hidden="true"></i>
               </a>
             </article>
           </div>
 
-          <!-- 11. Cliente Oculto Digital -->
-          <div class="col-sm-6 col-xl-4 service-item">
-            <article class="service-card h-100" aria-label="Cliente Oculto Digital">
-              <div class="service-icon-wrap">
-                <i class="fas fa-user-secret service-icon" aria-hidden="true"></i>
-              </div>
-              <div class="service-robot-img-wrap">
-                <img src="images/bots/imagem11.png" alt="" class="service-robot service-robot-sm" loading="lazy" aria-hidden="true" />
-              </div>
-              <h3 class="service-title">Cliente Oculto Digital</h3>
-              <p class="service-desc">Avaliação completa do atendimento por chat, telefone e e-mail, usabilidade do site/app, qualidade do serviço do início ao pós-venda, com relatório detalhado de melhorias.</p>
-              <a href="https://wa.me/5511934967887?text=Olá%2C%20Eduardo!%20Como%20você%20está%3F%20Tenho%20interesse%20no%20serviço%20de%20Cliente%20Oculto%20Digital." target="_blank" rel="noopener noreferrer" class="service-cta" aria-label="Contratar serviço de Cliente Oculto Digital">
-                Solicitar <i class="fas fa-arrow-right" aria-hidden="true"></i>
-              </a>
-            </article>
-          </div>
-
-          <!-- 12. Analytics e Relatórios -->
+          <!-- 10. Analytics e Relatórios -->
           <div class="col-sm-6 col-xl-4 service-item">
             <article class="service-card service-card-featured h-100" aria-label="Analytics e Relatórios">
               <div class="service-icon-wrap">
@@ -419,7 +370,7 @@
                 <img src="images/bots/imagem7.png" alt="" class="service-robot service-robot-sm" loading="lazy" aria-hidden="true" />
               </div>
               <h3 class="service-title">Analytics e Relatórios</h3>
-              <p class="service-desc">Relatório diário do seu site com Analytics, dashboards e relatórios internos em sistemas, configuração de hospedagem, domínio e configurações de anúncios.</p>
+              <p class="service-desc">Relatório diário do seu site com Analytics, dashboards e relatórios internos em sistemas e configurações de anúncios.</p>
               <a href="https://wa.me/5511934967887?text=Olá%2C%20Eduardo!%20Como%20você%20está%3F%20Tenho%20interesse%20no%20serviço%20de%20Analytics%20e%20Relatórios." target="_blank" rel="noopener noreferrer" class="service-cta" aria-label="Contratar serviço de Analytics e Relatórios">
                 Solicitar <i class="fas fa-arrow-right" aria-hidden="true"></i>
               </a>
@@ -436,15 +387,17 @@
       <img src="images/bots/imagem5.png" alt="" class="robot-deco robot-about-right" aria-hidden="true" loading="lazy" />
       <img src="images/bots/imagem10.png" alt="" class="robot-deco robot-about-left" aria-hidden="true" loading="lazy" />
 
+      <!-- Video — left half -->
+      <div class="about-video-wrap" aria-hidden="true">
+        <video class="about-video" autoplay muted loop playsinline>
+          <source src="videos/ti.mov" type="video/mp4" />
+        </video>
+        <div class="about-video-overlay"></div>
+      </div>
+
       <div class="container position-relative">
         <div class="row align-items-stretch gy-5">
-          <div class="col-lg-5">
-            <div class="about-photo-wrapper">
-              <img src="images/dev/dev.png" alt="Eduardo, Especialista em TI" class="about-photo" loading="lazy" />
-            </div>
-          </div>
-
-          <div class="col-lg-7">
+          <div class="col-lg-6 offset-lg-6">
             <span class="section-badge">Quem é Eduardo</span>
             <h2 id="about-heading" class="section-title">Experiência que<br /><span class="text-cyan">gera confiança</span></h2>
             <p class="about-text">
@@ -454,7 +407,7 @@
               Ao longo da minha trajetória profissional, trabalhei em <strong>diversas e grandes empresas multinacionais do ramo bancário como analista de sistemas</strong>, desenvolvendo projetos de grande porte e alta complexidade, o que me deu uma visão técnica sólida e grande capacidade de resolução de problemas.
             </p>
             <p class="about-text">
-              Hoje, em <strong>São Paulo, na região da Saúde</strong>, coloco toda essa experiência a serviço de quem precisar: seja você que nunca entendeu muito de tecnologia e precisa de uma ajuda prática no dia a dia, seja uma empresa que busca soluções confiáveis e bem executadas.
+              Hoje, em <strong>São Paulo, na região da Saúde</strong>, coloco toda essa experiência a serviço de quem precisar: seja você que nunca entendeu muito de tecnologia e precisa de uma ajuda prática no dia a dia, ou uma empresa que busca soluções confiáveis e bem executadas.
             </p>
             <div class="about-tags">
               <span class="about-tag"><i class="fas fa-check-circle" aria-hidden="true"></i> Graduado em Análise e Desenvolvimento de Sistemas</span>
@@ -569,16 +522,13 @@
                   <select class="form-select contact-input" id="contactService" name="service" required aria-required="true">
                     <option value="" disabled selected>Selecione um serviço</option>
                     <option>Sites, Apps e Sistemas</option>
+                    <option>E-mail Profissional</option>
                     <option>Segurança Digital</option>
-                    <option>Suporte em Computadores</option>
-                    <option>Aulas de Tecnologia</option>
                     <option>Marketing Digital</option>
                     <option>Banners e Logomarca</option>
                     <option>Reputação Online</option>
-                    <option>Formatação ABNT</option>
                     <option>Integrações de Sistemas</option>
                     <option>Investigação OSINT</option>
-                    <option>Cliente Oculto Digital</option>
                     <option>Analytics e Relatórios</option>
                     <option>Outro / Dúvida geral</option>
                   </select>

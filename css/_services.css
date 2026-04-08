@@ -115,7 +115,7 @@
   pointer-events: none;
 }
 .service-card:hover .service-robot-img-wrap {
-  opacity: .30;
+  opacity: .15;
   transform: scale(1.06) translateY(-6px);
 }
 
