@@ -89,8 +89,24 @@
   background: rgba(79, 131, 255, 0.1);
 }
 
-/* â”€â”€ 6b. Hero â€” overlay fade (espelho do about) â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */
-/* VÃ­deo ocupa full-width, gradiente controla a visibilidade */
+/* ── 6. About — overlay full-width blend ───────────────── */
+/* Vídeo ocupa full-width, gradiente escurece lado do texto (direita) */
+.about-video-wrap {
+  width: 100%;
+}
+
+.about-video-overlay {
+  background:
+    linear-gradient(to left,
+      #080D18 0%,
+      rgba(8, 13, 24, 0.95) 30%,
+      rgba(8, 13, 24, 0.60) 52%,
+      rgba(8, 13, 24, 0.15) 72%,
+      transparent 100%);
+}
+
+/* ── 6b. Hero — overlay full-width blend ───────────────── */
+/* Vídeo ocupa full-width, gradiente escurece lado do texto (esquerda) */
 .hero-video-wrap {
   width: 100%;
 }
