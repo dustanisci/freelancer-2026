@@ -1,0 +1,198 @@
+/* ============================================================
+   Aula Particular — Dark Theme Overrides
+   Remaps all shared CSS variables to a dark navy/slate palette
+   and fixes element-level hardcoded colours.
+   ============================================================ */
+
+/* ── 1. Variable remapping ─────────────────────────────── */
+:root {
+  /* Backgrounds */
+  --bg-dark:       #080D18;
+  --bg-section:    #0D1526;
+  --bg-card:       #1A2236;
+  --bg-card-hover: #22304A;
+
+  /* Foreground metals */
+  --metal-light: #CBD5E1;
+  --metal-mid:   #94A3B8;
+  --metal-dark:  #64748B;
+
+  /* Brand accents — brightened for dark surfaces */
+  --purple:       #4F83FF;
+  --purple-light: #7FA8FF;
+  --purple-glow:  rgba(79,131,255,0.18);
+  --cyan:         #38BDF8;
+  --cyan-dark:    #22A8E3;
+  --cyan-glow:    rgba(56,189,248,0.15);
+
+  /* Text */
+  --text-main:  #F1F5F9;
+  --text-muted: #94A3B8;
+  --text-dim:   #64748B;
+
+  /* Borders & shadows */
+  --border-subtle: rgba(255,255,255,0.07);
+  --border-glow:   rgba(56,189,248,0.35);
+  --shadow-card:   0 2px 16px rgba(0,0,0,0.45);
+  --shadow-glow-p: 0 4px 24px rgba(79,131,255,0.22);
+  --shadow-glow-c: 0 4px 24px rgba(56,189,248,0.18);
+}
+
+/* ── 2. Scrollbar — dark track ─────────────────────────── */
+::-webkit-scrollbar-track { background: #0D1526; }
+::-webkit-scrollbar-thumb { background: var(--purple); }
+
+/* ── 3. Navbar — dark glass ────────────────────────────── */
+#mainNav {
+  background: rgba(8,13,24,0.88);
+  border-bottom-color: rgba(255,255,255,0.07);
+  box-shadow: 0 1px 12px rgba(0,0,0,0.35);
+}
+#mainNav.scrolled {
+  background: rgba(8,13,24,0.97);
+  box-shadow: 0 2px 24px rgba(0,0,0,0.5);
+}
+#mainNav .nav-link {
+  color: var(--metal-mid);
+}
+#mainNav .nav-link:hover,
+#mainNav .nav-link.active {
+  color: var(--purple-light);
+  background: rgba(79,131,255,0.1);
+}
+
+/* ── 4. Hero — invert grid & brighten overlays ─────────── */
+.hero-bg-grid {
+  background-image:
+    linear-gradient(rgba(255,255,255,0.04) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255,255,255,0.04) 1px, transparent 1px);
+}
+
+.hero-section::before {
+  background:
+    radial-gradient(ellipse 60% 60% at 20% 50%, rgba(79,131,255,.18) 0%, transparent 70%),
+    radial-gradient(ellipse 40% 50% at 80% 30%, rgba(56,189,248,.13) 0%, transparent 70%);
+}
+
+/* ── 5. Section-common badges ──────────────────────────── */
+.section-badge {
+  color: var(--purple-light);
+  border-color: rgba(79,131,255,0.25);
+  background: rgba(79,131,255,0.1);
+}
+
+/* ── 6. About — overlay on dark bg ────────────────────── */
+.about-video-overlay {
+  background:
+    linear-gradient(to right,
+      transparent 0%,
+      rgba(8,13,24,0.55) 45%,
+      rgba(8,13,24,0.85) 62%,
+      #080D18 80%
+    );
+}
+
+/* ── 6b. Hero — overlay fade (espelho do about) ─────────── */
+.hero-video-overlay {
+  background:
+    linear-gradient(to left,
+      transparent 0%,
+      rgba(8,13,24,0.60) 65%,
+      rgba(8,13,24,0.88) 78%,
+      rgba(8,13,24,0.95) 88%
+    );
+}
+
+/* ── Mobile overrides ──────────────────────────────────── */
+@media (max-width: 991.98px) {
+  /* Hero: vídeo vira fundo completo — overlay leve, sem gradiente lateral */
+  .hero-video-overlay {
+    background: rgba(8,13,24,0.6);
+  }
+
+  /* About: overlay topo→base mais intenso para garantir leitura do texto */
+  .about-video-overlay {
+    background: linear-gradient(
+      to bottom,
+      rgba(8,13,24,0.92) 0%,
+      rgba(8,13,24,0.80) 55%,
+      rgba(8,13,24,0.25) 100%
+    );
+  }
+}
+
+/* ── 7. Stats cards ────────────────────────────────────── */
+.stat-card:hover {
+  box-shadow: 0 8px 32px rgba(0,0,0,0.5), var(--shadow-glow-p);
+}
+.diff-card:hover {
+  box-shadow: 0 8px 32px rgba(0,0,0,0.4), var(--shadow-glow-p);
+}
+
+/* ── 8. Contact section — restaura paleta clara ─────────── */
+.contact-section {
+  --bg-dark:       #FFFFFF;
+  --bg-section:    #F7F9FC;
+  --bg-card:       #FFFFFF;
+  --bg-card-hover: #F0F5FF;
+  --text-main:     #111827;
+  --text-muted:    #6B7280;
+  --text-dim:      #9CA3AF;
+  --border-subtle: rgba(0,0,0,0.09);
+  --purple:        #1D4ED8;
+  --purple-light:  #3B82F6;
+  --purple-glow:   rgba(29,78,216,0.12);
+  --cyan:          #0284C7;
+  --cyan-glow:     rgba(2,132,199,0.12);
+}
+
+.contact-form {
+  background: #FFFFFF;
+  border-color: rgba(0,0,0,0.09);
+  box-shadow: 0 2px 24px rgba(0,0,0,0.07);
+}
+
+.contact-input {
+  background: #F9FAFB;
+  border-color: rgba(0,0,0,0.09);
+  color: #111827;
+}
+.contact-input:focus {
+  background: #FFFFFF;
+  border-color: #1D4ED8;
+  box-shadow: 0 0 0 3px rgba(29,78,216,0.12);
+  color: #111827;
+}
+.contact-input::placeholder { color: #9CA3AF; }
+
+.form-select.contact-input option {
+  background: #FFFFFF;
+  color: #111827;
+}
+
+.form-label {
+  color: #111827;
+}
+
+.contact-section .section-badge {
+  color: #1D4ED8;
+  border-color: rgba(29,78,216,0.2);
+  background: rgba(29,78,216,0.05);
+}
+
+.contact-section .section-title {
+  color: #111827;
+}
+
+.contact-section .section-subtitle {
+  color: #6B7280;
+}
+
+/* ── 9. Footer ─────────────────────────────────────────── */
+.footer-brand { color: var(--text-main); }
+
+/* ── 10. FAB / floating button ─────────────────────────── */
+.fab-item .fab-label {
+  background: var(--bg-card);
+  border: 1px solid var(--border-subtle);
+}

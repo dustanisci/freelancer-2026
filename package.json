@@ -9,7 +9,8 @@
     "preview": "vite preview",
     "test": "vitest run",
     "test:watch": "vitest",
-    "coverage": "vitest run --coverage"
+    "coverage": "vitest run --coverage",
+    "deploy": "gh-pages -d dist"
   },
   "dependencies": {
     "animejs": "^3.2.2",
@@ -20,6 +21,7 @@
     "@testing-library/jest-dom": "^6.9.1",
     "@testing-library/user-event": "^14.6.1",
     "@vitest/coverage-v8": "^4.1.2",
+    "gh-pages": "^6.3.0",
     "happy-dom": "^20.8.9",
     "jsdom": "^29.0.1",
     "sharp": "^0.34.5",
