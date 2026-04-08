@@ -89,16 +89,6 @@
   background: rgba(79, 131, 255, 0.1);
 }
 
-/* â”€â”€ 6. About â€” overlay on dark bg â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */
-.about-video-overlay {
-  background:
-    linear-gradient(to right,
-      transparent 0%,
-      rgba(8, 13, 24, 0.75) 85%,
-      rgba(8, 13, 24, 0.90) 95%,
-      #080D18 100%);
-}
-
 /* â”€â”€ 6b. Hero â€” overlay fade (espelho do about) â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */
 /* VÃ­deo ocupa full-width, gradiente controla a visibilidade */
 .hero-video-wrap {
@@ -121,14 +111,6 @@
   /* Hero: vÃ­deo vira fundo completo â€” overlay leve, sem gradiente lateral */
   .hero-video-overlay {
     background: rgba(8, 13, 24, 0.6);
-  }
-
-  /* About: overlay topoâ†’base mais intenso para garantir leitura do texto */
-  .about-video-overlay {
-    background: linear-gradient(to bottom,
-        rgba(8, 13, 24, 0.92) 0%,
-        rgba(8, 13, 24, 0.80) 55%,
-        rgba(8, 13, 24, 0.6) 100%);
   }
 
   /* ServiÃ§os â€” forÃ§ar dark (responsive.css hardcoda branco) */
