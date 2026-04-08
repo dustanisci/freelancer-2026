@@ -124,9 +124,19 @@
 /* â”€â”€ Mobile overrides â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */
 @media (max-width: 991.98px) {
 
-  /* Hero: vÃ­deo vira fundo completo â€” overlay leve, sem gradiente lateral */
+  /* Hero: overlay leve uniforme (vídeo é fundo completo no mobile) */
   .hero-video-overlay {
     background: rgba(8, 13, 24, 0.6);
+  }
+
+  /* About: restaura overlay top→bottom igual à home no mobile */
+  .about-video-overlay {
+    background: linear-gradient(
+      to bottom,
+      rgba(5, 8, 18, 0.88) 0%,
+      rgba(5, 8, 18, 0.88) 50%,
+      rgba(5, 8, 18, 0.12) 100%
+    );
   }
 
   /* ServiÃ§os â€” forÃ§ar dark (responsive.css hardcoda branco) */
